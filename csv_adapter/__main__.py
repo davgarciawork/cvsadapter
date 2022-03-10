@@ -1,8 +1,10 @@
+import sys
 import csv_adapter
 
 
 def main():
-    csv_adapter.run()
+    print("Passing arg" + sys.argv[1])
+    csv_adapter.run(sys.argv[1])
 
 
 if __name__ == "__main__":
